@@ -14,7 +14,7 @@ namespace Takeit\Bundle\AmpHtmlBundle\Request\ParamConverter;
 use Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DoctrineParamConverter;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Component\HttpFoundation\Request;
-use Doctrine\Common\Persistence\ManagerRegistry;
+use Doctrine\Persistence\ManagerRegistry;
 use Takeit\Bundle\AmpHtmlBundle\Model\AmpInterface;
 
 /**

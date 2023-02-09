@@ -15,7 +15,7 @@ Installation
 The suggested installation method is via [Composer](https://getcomposer.org/):
 
 ```bash
-php composer.phar require takeit/amp-html-bundle:0.1.*
+php composer.phar require ylly/amp-html-bundle
 ```
 
 Documentation

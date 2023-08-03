@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "lullabot/amp": "1.1.*",
+        "lullabot/amp": "2.0.*",
         "symfony/framework-bundle": "^3.4 || ^4.4 || ^5.4",
         "symfony/twig-bundle": "^3.4 || ^4.4 || ^5.4"
     },

@@ -1,7 +1,7 @@
 {
     "name": "ylly/amp-html-bundle",
     "type": "symfony-bundle",
-    "description": "Provide AMP HTML conversion to your Symfony2/Symfony3 projects.",
+    "description": "Provide AMP HTML conversion to your Symfony6 projects.",
     "keywords": ["amphtml", "amp-html", "amp", "google", "html"],
     "license":"MIT",
     "minimum-stability": "dev",
@@ -12,14 +12,14 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": ">=8.1",
         "lullabot/amp": "2.0.*",
-        "symfony/framework-bundle": "^3.4 || ^4.4 || ^5.4",
-        "symfony/twig-bundle": "^3.4 || ^4.4 || ^5.4"
+        "symfony/framework-bundle": "^6.0",
+        "symfony/twig-bundle": "^6.0"
     },
     "require-dev": {
-        "phpspec/phpspec": "^5.1",
-        "sebastian/comparator": "^3.0"
+        "phpspec/phpspec": "^7.4",
+        "sebastian/comparator": "^5.0"
     },
     "autoload": {
         "exclude-from-classmap": [

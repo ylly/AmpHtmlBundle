@@ -19,7 +19,7 @@
     },
     "require-dev": {
         "phpspec/phpspec": "^7.4",
-        "sebastian/comparator": "^5.0"
+        "sebastian/comparator": "^4.0"
     },
     "autoload": {
         "exclude-from-classmap": [

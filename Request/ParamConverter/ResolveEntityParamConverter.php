@@ -11,10 +11,10 @@
 
 namespace Takeit\Bundle\AmpHtmlBundle\Request\ParamConverter;
 
+use Doctrine\Bundle\DoctrineBundle\Registry;
 use Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\DoctrineParamConverter;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Component\HttpFoundation\Request;
-use Doctrine\Common\Persistence\ManagerRegistry;
 use Takeit\Bundle\AmpHtmlBundle\Model\AmpInterface;
 
 /**
@@ -25,7 +25,7 @@ use Takeit\Bundle\AmpHtmlBundle\Model\AmpInterface;
 class ResolveEntityParamConverter extends DoctrineParamConverter
 {
     /**
-     * @var ManagerRegistry
+     * @var Registry
      */
     protected $registry;
 
@@ -36,9 +36,9 @@ class ResolveEntityParamConverter extends DoctrineParamConverter
 
     /**
      * @param array                $mapping  Interface to entity mapping
-     * @param ManagerRegistry|null $registry Registry manager
+     * @param Registry|null $registry Registry manager
      */
-    public function __construct(array $mapping, ManagerRegistry $registry = null)
+    public function __construct(array $mapping, Registry $registry = null)
     {
         $this->mapping = $mapping;
         $this->registry = $registry;

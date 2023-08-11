@@ -12,11 +12,13 @@
 namespace Takeit\Bundle\AmpHtmlBundle\Twig;
 
 use Takeit\Bundle\AmpHtmlBundle\Generator\AmpUrlGeneratorInterface;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
 
 /**
  * AMP Twig Extension.
  */
-class AmpExtension extends \Twig_Extension
+class AmpExtension extends AbstractExtension
 {
     /**
      * @var AmpUrlGeneratorInterface
@@ -37,7 +39,7 @@ class AmpExtension extends \Twig_Extension
     public function getFilters()
     {
         return array(
-            new \Twig_SimpleFilter('amp', array($this, 'ampFilter')),
+            new TwigFilter('amp', array($this, 'ampFilter')),
         );
     }
 
